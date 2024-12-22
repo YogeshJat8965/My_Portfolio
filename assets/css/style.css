@@ -208,18 +208,26 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  scale: 1.2;
+  height: 500px; /* Adjust the height */
+  width: auto; /* Maintain aspect ratio */
   margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%; /* Optional: make the image circular */
+  object-fit: cover;
+  /* mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%); */
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%);
+  /* filter: brightness(0.9); Slightly dim the overall image */
   cursor: pointer;
 }
+
+
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  scale: 1.3;
 }
 .home .content h2 {
   font-size: 5rem;
@@ -239,7 +247,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: rgb(243, 10, 10);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -363,18 +371,19 @@ header .navbar ul li a:hover {
   margin: 4rem;
   width: 30rem;
   height: auto;
-  border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
 }
 .about .row .image img:hover {
+  scale: 1.1;
   mix-blend-mode: normal;
 }
 .about .row .content {
   flex: 1 1 45rem;
-  padding: 3rem;
+  padding: 6rem;
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);

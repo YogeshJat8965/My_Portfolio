@@ -45,7 +45,7 @@
     "image": "instagrammern",
     "category": "mern",
     "links": {
-      "view": "https://instagramernstack.herokuapp.com/",
+      "view": "https://instagramernstack.kuapp.com/",
       "code": "https://github.com/jigar-sable/instagram-mern"
     }
   },
@@ -55,7 +55,7 @@
     "image": "flipkartmern",
     "category": "mern",
     "links": {
-      "view": "https://flipkartwebs.herokuapp.com/",
+      "view": "https://flipkartwebs.kuapp.com/",
       "code": "https://github.com/jigar-sable/flipkart-mern"
     }
   },
@@ -75,7 +75,7 @@
     "image": "reactprojects",
     "category": "mern",
     "links": {
-      "view": "https://reactjsprojects.herokuapp.com/",
+      "view": "https://reactjsprojects.kuapp.com/",
       "code": "https://github.com/jigar-sable/React-Projects"
     }
   },

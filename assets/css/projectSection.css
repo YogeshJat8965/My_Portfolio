@@ -1,0 +1,183 @@
+/* Section Styling */
+.work {
+  /* margin-bottom: 10px; */
+    padding: 50px 10px;
+    /* background-color: #1990b9; Light background for contrast */
+  }
+  
+  .work h1{
+    color: #f8f9fa;
+    font-size: 5.5rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .work h1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Grid for Cards */
+  .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-bottom: 2rem; */
+  }
+  
+  /* Card Container */
+  .card-container {
+    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row with gap */
+    max-width: calc(33.333% - 30px); /* Ensure consistent sizing */
+    min-width: 280px; /* Prevent shrinking too small */
+    perspective: 1000px;
+  }
+  
+  /* Card Styling */
+  .card {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: rgba(184, 20, 20, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(202, 111, 111, 0.1);
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    /* background-color: #6f7475; */
+  }
+  
+  /* Card Before Pseudo-element for RGB Border */
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); */
+    /* background: linear-gradient(45deg, #141e30, #243b55, #6a11cb, #2575fc); */
+    /* background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900); */
+
+    background-size: 300% 300%;
+    animation: rgbBorder 5s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+  
+  .card:hover:before {
+    opacity: 1;
+  }
+  
+  /* Card Content */
+  .contentP {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .contentP h2 {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .image-container {
+    width: 270px;
+    height: 270px;
+    margin: 15px 0;
+    position: relative;
+    top: -5%;
+    transform: translateZ(60px);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transform-origin: center center; /* Ensures scaling happens from the center */
+  }
+
+  .description {
+    font-size: small;
+    font-weight: 100;
+    color: #f8f9fa;
+    opacity: 1; 
+    transition: opacity 0.4s ease-in-out; /* Smooth transition effect */
+}
+
+  .image-container:hover  {
+    transform: scale(1.2); 
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, filter 0.4s ease-in-out;
+    transform-origin: center center; /* Ensures scaling happens from the center */
+
+  }
+
+
+
+  @keyframes rgbBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+ 
+  
+  @keyframes neonGlow {
+    0% { box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; }
+    50% { box-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff; }
+    100% { box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; }
+  }
+  .card {
+    animation: neonGlow 3s infinite;
+    background: #020202; /* Dark background to highlight glow */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  /* .card:hover {
+    animation: rgbShadow 5s linear infinite;
+  } */
+  
+
+  

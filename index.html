@@ -9,6 +9,8 @@
     <!-- Custom CSS -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/aboutSection.css">
+    <link rel="stylesheet" href="./assets/css/projectSection.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
@@ -21,20 +23,17 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 
+  <!-- SKILL SECTION -->
+  <link rel="stylesheet" href="./assets/css/skillSection.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script>
+        <script src="./script.js"></script>
+        <script src="node_modules/velocity-animate/velocity.min.js"></script>
 </head>
 <body oncontextmenu="return false" >
 
-  <!-- MERE CHANGES -->
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
 
 <!-- navbar starts -->
 <header >
@@ -90,61 +89,177 @@
 
 
 <!-- about section starts -->
-<section class="about" id="about"  style="background-image: url('./portfolio-bg.jpg');">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
+<section class="about wrapper" id="about">
 
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+  <h2 class="heading" style="color:  #00bfff;"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+  <div class="row">
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.JPG" alt="">
+      <img draggable="false" class="tilt" src="./assets/images/profile2.JPG" alt="">
     </div>
     <div class="content">
-        <h3>I'm Yogesh</h3>
-        <span class="tag">Full Stack Developer</span>
+      <h3 style="color:  #e2e8f0;">I'm Yogesh</h3>
+      <span class="tag">Full Stack Developer</span>
+
+      <section style="font-family: Arial, sans-serif; line-height: 1.8;">
+        <h2 style="color: white; font-size: 3em;">Freelancer | Project Innovator | Aspiring Intern</h2>
+        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+          A skilled <strong style="color: white;">MERN Stack Developer</strong> with expertise in <strong
+            style="color: white;">React.js</strong>,
+          <strong style="color: white;">Node.js</strong>, <strong style="color: white;">TailwindCSS</strong>, and
+          <strong style="color: white;">Puppeteer</strong>. I specialize in building efficient web applications and
+          automating workflows to
+          simplify business processes.
+        </p>
+        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+          Over the past months, I’ve successfully delivered <strong style="color: white;">freelancing projects</strong>
+          that helped businesses enhance
+          their online presence through modern, user-friendly designs.
+        </p>
+        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+          <strong style="color: white;">Achievements:</strong> Solved <strong style="color: white;">300+
+            problems</strong> on LeetCode, completed scalable full-stack projects,
+          and collaborated effectively with clients to meet deadlines.
+        </p>
+        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+          <strong style="color: white;">Contact:</strong> your-email@gmail.com | 📍 Indore, India
+        </p>
+
+        <h3 style="color: white; font-size: 2.5em; margin-top: 20px;">What Sets Me Apart?</h3>
+        <ul style="font-size: 1.5em; color: #00bfff; margin-top: 10px; padding-left: 20px;">
+          <li>🌟 <strong style="color: white;">Real-World Experience:</strong> Delivered responsive and scalable web
+            solutions.</li>
+          <li>🔧 <strong style="color: white;">Problem-Solving Skills:</strong> Tackled diverse challenges and solved
+            real client issues.</li>
+          <li>💡 <strong style="color: white;">Internship-Ready:</strong> A quick learner passionate about contributing
+            to meaningful projects.</li>
+        </ul>
+
+        <h3 style="color: white; font-size: 2.5em; margin-top: 20px;">What I’m Looking For</h3>
+        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+          Seeking an <strong style="color: white;">internship</strong> where I can leverage my skills, collaborate with
+          innovative teams, and
+          contribute to impactful projects that drive real results.
+        </p>
+
+        <div class="resumebtn">
+          <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank"
+            class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+</section>
+
+ <!-- SKILL SECTION -->
+
+<!-- <section> -->
+  <h2 class="skillHeading" >SKILLS</h2>
+  <div class="containerS">
+    <div class="hexagon-grid">
+        <!-- Technical Skills Heading -->
+        <h2 class="Technical">Technical Skills</h2>
         
-        <p>I am a Full-Stack developer based in Gwalior, India. 
-          I am an Computer Science Engineer undergraduate from MITS Gwalior.
-          I am very passionate about improving my coding skills & developing applications & websites.
-          I build WebApps and Websites using MERN Stack.
-          Working for myself to improve my skills. </p>
-        
-        <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
-            <div class="box">
-              <p><span> email : </span> yogeshjat8965@gmail.com</p>
-              <p><span> place : </span> Gwalior, India - 474005</p>
+        <!-- Hexagons for Technical Skills -->
+        <div class="hexagon hex-1" data-expertise="BACKEND" data-experience="NodeJs, ExpressJs, MongoDB, Sql, WebSockets">
+            <span class="letter b">B</span>
+        </div>
+        <div class="hexagon hex-2" data-expertise="FRONTEND" data-experience="Tailwind, ReactJs, ES6+, Material UI, Next UI">
+            <span class="letter f">F</span>
+        </div>
+        <div class="hexagon hex-3" data-expertise="WEB SCRAPING" data-experience="Puppeteer,  Selenium">
+            <span class="letter h">W</span>
+        </div>
+        <div class="hexagon hex-4" data-expertise="TOOLS" data-experience="Git, GitHub, Vs Code, Postman, NPM, Yarn">
+            <span class="letter c">D</span>
+        </div>
+        <div class="hexagon hex-5" data-expertise="JAVASCRIPT" data-experience="ES6+, jQuery, Node">
+            <span class="letter j">J</span>
+        </div>
+        <div class="hexagon hex-6" data-expertise="DSA" data-experience="350+ Poblems on LeetCode, Gfg">
+            <span class="letter g">D</span>
+        </div>
+        <div class="hexagon hex-7" data-expertise="Coding" data-experience="2 star on CodeChef with Rating 1430, 200+ CP questions on Codeforces, CodeChef">
+            <span class="letter s">C</span>
+        </div>
+
+        <!-- Expertise Panel -->
+        <div class="expertise-panel">
+            <div class="expertise-title">Expertise</div>
+            <div class="expertise-name"></div>
+            <div class="expertise-details">
+               
+                <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
             </div>
         </div>
-        
-        <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
+    </div>
+
+    <!-- Non-Technical Skills -->
+     
+    <div class="hexagon-grid">
+        <!-- Non-Technical Skills Heading -->
+        <h2 class="nonTechnical">Non-Technical Skills</h2>
+
+        <!-- Hexagons for Non-Technical Skills -->
+        <div class="hexagon hex-1" data-expertise="Communication" data-experience="Presentation Skills, Active Listening">
+            <span class="letter b">C</span>
+        </div>
+        <div class="hexagon hex-2" data-expertise="Time Management" data-experience="Prioritization, Scheduling, Deadline Management">
+            <span class="letter f">M</span>
+        </div>
+        <div class="hexagon hex-3" data-expertise="Teamwork" data-experience="Cooperation in Remote Teams, Team Building">
+            <span class="letter h">T</span>
+        </div>
+        <div class="hexagon hex-4" data-expertise="Leadership" data-experience="Goal Setting and Achievement, Conflict Resolution">
+            <span class="letter c">L</span>
+        </div>
+        <div class="hexagon hex-5" data-expertise="Creativity" data-experience="Curiosity and Exploration, Creative Problem Solving">
+            <span class="letter j">C</span>
+        </div>
+        <div class="hexagon hex-6" data-expertise="Problem-Solving" data-experience="Critical Thinking, Creative Solutions, Decision Making">
+            <span class="letter g">P</span>
+        </div>
+        <div class="hexagon hex-7" data-expertise="Collaboration" data-experience="Cooperation in Remote Teams">
+            <span class="letter s">C</span>
         </div>
 
+        <!-- Expertise Panel -->
+        <div class="expertise-panel">
+            <div class="expertise-title">Expertise</div>
+            <div class="expertise-name"></div>
+            <div class="expertise-details">
+                <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
+            </div>
+        </div>
     </div>
-    </div>
-</section>
-<!-- about section ends -->
+</div>
+<!-- </section> -->
+
 
 <!-- skills section starts -->
-<section class="skills" id="skills" style="background-image: url('./portfolio-bg.jpg');">
+<!-- <section class="skills" id="skills" >
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
     <div class="container">
           <div class="row" id="skillsContainer">
-        <!-- /</div> -->
+        /</div>
     </div>
-</section>
+</section> -->
 <!-- skills section ends -->
 
 
 <!-- education section starts -->
-<section class="education" id="education">
+<!-- <section class="education" id="education">
 
   <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
 
@@ -175,42 +290,87 @@
     </div>
 
 </div>
-</section>
+</section> -->
 <!-- education section ends -->
 
 
 <!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-  <div class="box-container">
-
-    <!-- <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+<section class="work" id="work" style="background-image: url('./portfolio-bg.jpg');">
+  <h1 class="heading"><i class="fas fa-laptop-code"></i> Projects</h1>
+  <!-- <h2 class="section-title">Projects</h2> -->
+  <div class="cards-grid">
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="headingP">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
           </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
         </div>
       </div>
-    </div> -->
-
-</div>
-
-<div class="viewall">
-  <a href="/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
-
+    </div>
+    
+    
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="headingP">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
+          </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="headingP">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
+          </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="headingP">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
+          </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="xyz">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
+          </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="contentP">
+          <h2 class="xyz">Weather App</h2>
+          <div class="image-container">
+            <img src="./download.jpeg" alt="Mountain Peak">
+          </div>
+          <p class="description">A simple web app to ckech weather conditions for your location</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
 </section>
+
 <!-- work project section ends -->
 
 <!-- experience section starts -->
@@ -415,20 +575,21 @@
     ></script>
 
     <script src="jquery.ripple.js"></script>
-    <script>
+    <!-- <script>
         $(function(){
             $("#target").ripple({
                 duration: 5,
                 speed: 200000 // Adjust the speed value to make the effect faster
             });
         });
-    </script>
+    </script> -->
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/projectSection.js"></script>
 
-<script>
+<!-- <script>
   $(document).ready(function() {
     $('.about').ripples({
       resolution: 512,
@@ -436,7 +597,20 @@
       perturbance: 0.04,
     });
   });
+</script> -->
+<script>
+  $(document).ready(function() {
+    $('.work').ripples({
+      resolution: 512,
+      dropRadius: 20, // px
+      perturbance: 0.04,
+    });
+  });
 </script>
+
+<!-- SKILL SECTION -->
+<script src="./assets/js/skillSection.js"></script>
+
 
 </body>
 </html>

@@ -1,0 +1,404 @@
+.skillHeading{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+
+}
+.containerS {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.hexagon-grid {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+}
+
+.Technical {
+  position: relative;
+  padding-bottom: 10%;
+  left: 30%;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 130px;
+  font-weight: bold;
+  color: #111010;
+}
+
+.nonTechnical {
+  position: relative;
+  bottom: -20px;
+  left: 30%;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 130px;
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+.hexagon {
+  margin-top: 13%;
+  margin-left: 35%;
+  position: absolute;
+  width: 100px;
+  height: 115px;
+  background: rgb(10, 10, 10);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hexagon::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgb(164, 233, 238);
+  z-index: -1;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hexagon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.letter {
+  font-size: 24px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+
+/* Positioning with adjusted overlap */
+.hex-1 { top: 0; left: 150px; }
+.hex-2 { top: 0; left: 290px; }
+.hex-3 { top: 100px; left: 80px; }
+.hex-4 { top: 100px; left: 220px; }
+.hex-5 { top: 100px; left: 360px; }
+.hex-6 { top: 200px; left: 150px; }
+.hex-7 { top: 200px; left: 290px; }
+
+/* Letter colors with adjusted contrast */
+.b { background: #4A4A4A; color: white; }
+.f { background: #26B99A; color: white; }
+.h { background: #E67E22; color: white; }
+.c { background: #3498DB; color: white; }
+.j { background: #9FD356; color: white; }
+.g { background: #34495E; color: white; }
+.s { background: #E74C3C; color: white; }
+
+.expertise-panel {
+  position: absolute;
+  top: 10%;
+  left: 165%;
+  width: 600px;
+  padding: 40px;
+  background: white;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* .expertise-panel {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 600px;
+  padding: 40px;
+  background: white;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+*/
+
+
+.expertise-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;  /* Changed from left: 0 to right: 0 */
+  width: 40%;  /* Added width to contain the image on the right */
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: all 0.6s ease;
+  transform: scale(1.1);
+}
+
+.expertise-panel.active {
+  opacity: 1;
+  transform: translateX(0) skewX(-5deg);
+}
+
+.expertise-panel.active::before {
+  opacity: 0.1; /* Subtle background image opacity */
+  transform: scale(0.6);
+
+}
+.expertise-panel:not(.active)::before {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.expertise-panel:not(.active) .expertise-title,
+.expertise-panel:not(.active) .expertise-name,
+.expertise-panel:not(.active) .expertise-label,
+.expertise-panel:not(.active) .expertise-value {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;  /* Removes transition when hiding */
+}
+
+.expertise-panel > * {
+  position: relative;
+  z-index: 2;
+  transform: skewX(5deg);
+}
+
+.expertise-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transform: rotate(-15deg);
+  z-index: 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease;
+}
+
+/* .expertise-panel.active .expertise-icon {
+  opacity: 0.1;
+  transform: rotate(0);
+} */
+
+.expertise-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 1.6s ease;
+  transform: scale(1.6);
+}
+
+.expertise-panel.active::before {
+  opacity: 0.2;
+  transform: scale(0.6);
+}
+
+/* Technical Skills Background Images */
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="BACKEND"]::before {
+  background-image: url('../images/skills/mongo.png');
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="FRONTEND"]::before {
+  background-image: url('../images/skills/react.png');
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="WEB SCRAPING"]::before {
+  background-image: url('../images/skills/automation.png');
+  background-size: 150% 150%;
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="TOOLS"]::before {
+  background-image: url('../images/skills/git.png');
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="JAVASCRIPT"]::before {
+  background-image: url('../images/skills/js.jpg');
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="DSA"]::before {
+  background-image: url('../images/skills/leetcode.png');
+}
+
+.hexagon-grid:first-child .expertise-panel[data-active-expertise="Coding"]::before {
+  background-image: url('../images/skills/cp.jpeg');
+}
+
+/* Non-Technical Skills Background Images */
+/* .hexagon-grid:last-child .expertise-panel[data-active-expertise="BACKEND"]::before {
+  background-image: url('/backend.png');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="FRONTEND"]::before {
+  background-image: url('/frontend.png');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="HTML"]::before {
+  background-image: url('/html.png');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="CSS"]::before {
+  background-image: url('/css.png');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="JAVASCRIPT"]::before {
+  background-image: url('/js.jpg');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="GIT"]::before {
+  background-image: url('/git.png');
+}
+
+.hexagon-grid:last-child .expertise-panel[data-active-expertise="SECURITY"]::before {
+  background-image: url('/security.png');
+} */
+
+.expertise-title {
+  font-size: 24px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  transition-delay: 0.1s;
+}
+
+.expertise-name {
+  font-size: 64px;
+  font-weight: 700;
+  color: #00b894;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  transition-delay: 0.2s;
+}
+
+.expertise-name::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #26B99A;
+}
+
+.expertise-details {
+  font-size: 1.5rem;
+  color: #0e0d0d;
+  /* line-height: 1.8; */
+}
+
+.expertise-label {
+  font-size: 18px;
+  color: #00b894;
+  font-weight: 500;
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  transition-delay: 0.3s;
+}
+
+
+.expertise-value {
+  scale: 2;
+  font-size: 80px;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  transition-delay: 0.4s;
+}
+
+.expertise-panel.active .expertise-title,
+.expertise-panel.active .expertise-name,
+.expertise-panel.active .expertise-label,
+.expertise-panel.active .expertise-value {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.expertise-icon {
+          position: absolute;
+          top: 40px;
+          right: 40px;
+          width: 180px;
+          height: 180px;
+          opacity: 0.15;
+          transform: rotate(-15deg);
+          /* background-image: url('/api/placeholder/100/100'); */
+          background-size: contain;
+          background-repeat: no-repeat;
+          transition: all 0.4s ease;
+      }
+
+      .expertise-panel.active .expertise-icon {
+          transform: rotate(0);
+          opacity: 0.2;
+      }
+
+      @media (max-width: 1200px) {
+          .expertise-panel {
+              left: 120%;  /* Adjusted for responsiveness */
+              width: 350px;
+          }
+          
+          .expertise-name {
+              font-size: 48px;
+          }
+      }
+      
+      @media (max-width: 992px) {
+          .expertise-panel {
+              position: fixed;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%); /* Centered for smaller screens */
+              z-index: 1000;
+          }
+          
+          .expertise-panel.active {
+              transform: translate(-50%, -50%);
+          }
+      }
+
+
+/* etc... */

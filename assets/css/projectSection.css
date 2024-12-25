@@ -1,183 +1,202 @@
 /* Section Styling */
 .work {
-  /* margin-bottom: 10px; */
-    padding: 50px 10px;
-    /* background-color: #1990b9; Light background for contrast */
-  }
-  
-  .work h1{
-    color: #f8f9fa;
-    font-size: 5.5rem;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-
-  .work h1{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Grid for Cards */
-  .cards-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* margin-bottom: 2rem; */
-  }
-  
-  /* Card Container */
-  .card-container {
-    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row with gap */
-    max-width: calc(33.333% - 30px); /* Ensure consistent sizing */
-    min-width: 280px; /* Prevent shrinking too small */
-    perspective: 1000px;
-  }
-  
-  /* Card Styling */
-  .card {
-    position: relative;
-    width: 100%;
-    height: 360px;
-    background: rgba(184, 20, 20, 0.1);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 15px rgba(202, 111, 111, 0.1);
-    transform-style: preserve-3d;
-    transition: all 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-    /* background-color: #6f7475; */
-  }
-  
-  /* Card Before Pseudo-element for RGB Border */
-  .card:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); */
-    /* background: linear-gradient(45deg, #141e30, #243b55, #6a11cb, #2575fc); */
-    /* background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900); */
-
-    background-size: 300% 300%;
-    animation: rgbBorder 5s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
-  }
-  
-  .card:hover:before {
-    opacity: 1;
-  }
-  
-  /* Card Content */
-  .contentP {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #222;
-    font-family: 'Arial', sans-serif;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  .contentP h2 {
-    position: relative;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .image-container {
-    width: 270px;
-    height: 270px;
-    margin: 15px 0;
-    position: relative;
-    top: -5%;
-    transform: translateZ(60px);
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    
-    object-fit: cover;
-    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
-    transform-origin: center center; /* Ensures scaling happens from the center */
-  }
-
-  .description {
-    font-size: small;
-    font-weight: 100;
-    color: #f8f9fa;
-    opacity: 1; 
-    transition: opacity 0.4s ease-in-out; /* Smooth transition effect */
+  padding: 50px 10px;
 }
 
-  .image-container:hover  {
-    transform: scale(1.2); 
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out, filter 0.4s ease-in-out;
-    transform-origin: center center; /* Ensures scaling happens from the center */
+.work h1 {
+  color: #f8f9fa;
+  font-size: 5.5rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 
+/* Responsive container */
+.containerP {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  gap: 2.5rem;
+  padding: 2rem;
+  max-width: 1200px; /* Set a max-width for the container */
+  width: 100%;
+  margin: 0 auto; /* Center the grid */
+  justify-content: center; /* Make sure cards are centered */
+}
+
+/* Make grid responsive */
+@media (min-width: 600px) {
+  .containerP {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
   }
+}
 
-
-
-  @keyframes rgbBorder {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+@media (min-width: 900px) {
+  .containerP {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
   }
- 
-  
-  @keyframes neonGlow {
-    0% { box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; }
-    50% { box-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff; }
-    100% { box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; }
-  }
-  .card {
-    animation: neonGlow 3s infinite;
-    background: #020202; /* Dark background to highlight glow */
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  
-  
-  
-  
-  
-  /* .card:hover {
-    animation: rgbShadow 5s linear infinite;
-  } */
-  
+}
 
+/* Card Styling */
+.cardP {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* Set a max-width for cards */
+  height: 500px;
+  background: rgba(2, 12, 27, 0.7);
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0 auto; /* Center the cards */
+}
+
+.cardP:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(3, 250, 180, 0.4);
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  z-index: 2;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 10px 0;
+  border: 2px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition for all properties */
+}
+
+/* Image Scaling on Hover */
+.cardP:hover .image-container {
+  transform: translateY(-20px);
+  width: 310px; /* Increase width on hover */
+  height: 310px; /* Increase height on hover */
+}
+
+/* Image Inside the Container */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Image Scaling on Hover */
+/* .cardP:hover .image-container img {
+  transform: scale(1.1) rotate(-2deg);
+} */
+
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgba(100, 255, 218, 0.1), transparent);
+  z-index: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* .cardP:hover .image-container img {
+  transform: scale(1.1) rotate(-2deg);
+} */
+
+h2 {
+  color: #e6f1ff;
+  font-size: 2.8em;
+  margin-bottom: 0px;
+  margin-top: -2%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 2px 10px rgba(100, 255, 218, 0.3);
+}
+
+.tech-stack {
   
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  bottom: 35px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-tag {
+  font-weight: 100;
+  padding: 6px 14px;
+  background: rgba(12, 12, 12, 0.1);
+  border-radius: 20px;
+  color: #64ffda;
+  font-size: 1.3em;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: all 3s ease;
+}
+
+/* .tech-tag:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+} */
+
+.description {
+  font-size: 15px;
+  color: #fafeff;
+  padding: 20px;
+  text-align: center;
+  width: 85%;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  bottom: 2%;
+}
+
+.cardP:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide tech stack and show description smoothly */
+.cardP:hover .tech-stack {
+  opacity: 0;
+  transform: translateY(50px); /* Moves the tech stack down smoothly */
+}
+
+.glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            rgba(100, 255, 218, 0.15) 0%,
+            transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.cardP:hover .glow {
+  opacity: 1;
+}

@@ -59,6 +59,10 @@
       height: calc(100vh - 70px);
       visibility:visible;
     }
+      #nav.active #menu{
+      height: calc(100vh - 70px);
+      visibility:visible;
+    }
     #menu a {
       padding:1rem 0;
       margin:0 1rem;
@@ -105,6 +109,25 @@
     } */
   
   /*--------------star animation--------------------*/
+
+  #nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility:visible;
+  }
+    #nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility:visible;
+  }
+  #nav.active #hamburguer{
+    border-top-color:transparent;
+  }
+    #nav.active #hamburguer::before{
+      transform:rotate(135deg);
+  }
+    #nav.active #hamburguer::after{
+      transform:rotate(-135deg);
+      top:-7px;
+  }
   
   @media(max-width:600px){
    

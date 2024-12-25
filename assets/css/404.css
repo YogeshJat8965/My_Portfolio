@@ -29,7 +29,7 @@ html{
   overflow-x: hidden;
 }
 html::-webkit-scrollbar{
-  width: .8rem;
+  width: 8z rem;
 }
 html::-webkit-scrollbar-track{
   background: rgb(235, 202, 245);

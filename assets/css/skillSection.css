@@ -1,21 +1,25 @@
 .skillHeading{
-  font-size: 50px;
-  color: rgb(0, 0, 0);
-  position: relative;
-  left: 50%;
-  right: 50%;
+  position: absolute;
+  font-size: 60px;
+  color: rgb(249, 250, 250);
+  left: 45%;
+  right: 0%;
+  z-index: 11;
   margin-top: 2%;
-  margin-bottom: 1%;
-
+  margin-bottom: 2%;
 }
 .containerS {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: #f5f5f5;
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  background-image: url('../images/skills/wave-background-abstract-gradient-design_483537-3688.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .hexagon-grid {
   position: relative;
@@ -26,24 +30,27 @@
 
 .Technical {
   position: relative;
-  padding-bottom: 10%;
+  margin-top: 25%;
+  /* padding-bottom: 10%; */
+  /* padding-top: 5%; */
   left: 30%;
   text-align: center;
   font-size: 32px;
   margin-bottom: 130px;
   font-weight: bold;
-  color: #111010;
+  color: #fcfafa;
 }
 
 .nonTechnical {
   position: relative;
+  margin-top: 10%;
   bottom: -20px;
   left: 30%;
   text-align: center;
   font-size: 32px;
   margin-bottom: 130px;
   font-weight: bold;
-  color: #0f0f0f;
+  color: #f8f3f3;
 }
 
 .hexagon {
@@ -69,7 +76,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: rgb(164, 233, 238);
+  background: rgb(235, 238, 238);
   z-index: -1;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -77,7 +84,7 @@
 
 .hexagon:hover {
   transform: scale(1.1);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(247, 244, 244, 0.2);
 }
 
 .letter {
@@ -123,7 +130,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   border-radius: 8px;
   overflow: hidden;
-  z-index: 1000;
+  z-index: -10;
 }
 
 /* .expertise-panel {
@@ -159,6 +166,7 @@
 }
 
 .expertise-panel.active {
+  z-index: 11;
   opacity: 1;
   transform: translateX(0) skewX(-5deg);
 }
@@ -400,5 +408,138 @@
           }
       }
 
+      
+.social-links {
+    position: absolute;
+    margin-top: 2%;
+    right: 2%;
+    z-index: 11;
+    /* top: 50%; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon:hover::before {
+    opacity: 1;
+}
+
+.social-icon i {
+    font-size: 24px;
+    color: #4a5568;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: white;
+}
+
+/* Specific colors for different platforms */
+.github:hover::before {
+    background: linear-gradient(135deg, #24292e 0%, #404448 100%);
+}
+
+.linkedin:hover::before {
+    background: linear-gradient(135deg, #0077B5 0%, #00a0dc 100%);
+}
+
+.codechef:hover::before {
+    background: linear-gradient(135deg, #5B4638 0%, #796357 100%);
+}
+
+.codeforces:hover::before {
+    background: linear-gradient(135deg, #1f8acb 0%, #4bb8f7 100%);
+}
+
+.leetcode:hover::before {
+    background: linear-gradient(135deg, #FFA116 0%, #ffc14d 100%);
+}
+
+/* Tooltip styles */
+.social-icon::after {
+  z-index: 111;
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding: 5px 10px;
+  background: #d11919;
+  color: rgb(235, 37, 37);
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  pointer-events: none;
+}
+
+.social-icon:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  animation: tooltipBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes tooltipBounce {
+  0% {
+      transform: translateX(-50%) translateY(10px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateX(-50%) translateY(-2px);
+  }
+  100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 
 /* etc... */

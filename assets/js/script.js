@@ -249,3 +249,13 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+// Scroll reveal for skills section
+srtop.reveal('.skillHeading', { delay: 200 });
+srtop.reveal('.social-links .social-icon', { interval: 200 });
+
+srtop.reveal('.Technical', { delay: 200 });
+srtop.reveal('.hexagon-grid .hexagon', { interval: 200 });
+srtop.reveal('.expertise-panel', { delay: 400 });
+srtop.reveal('.nonTechnical', { delay: 200 });
+

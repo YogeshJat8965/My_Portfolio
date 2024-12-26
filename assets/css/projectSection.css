@@ -107,7 +107,7 @@
 
 /* Image Scaling on Hover */
 .cardP:hover .image-container {
-  transform: translateY(-20px);
+  /* transform: translateY(-15px); */
   width: 310px; /* Increase width on hover */
   height: 310px; /* Increase height on hover */
 }

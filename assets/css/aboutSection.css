@@ -1,4 +1,4 @@
-/* body,ul{
+ body,ul{
     margin:0;
     padding:0;
   }
@@ -11,7 +11,7 @@
   a:hover{
     color:gray;
   } */
-  /* #logo{
+#logo{
     font-size:1.5rem;
     font-weight:bold;
      background: -webkit-linear-gradient(white, #38495a);
@@ -40,7 +40,7 @@
   #btn{
     display:none;
   }
-  @media(max-width:600px){
+  @media(max-width:500px){
    
     #menu{
       display:block;
@@ -106,7 +106,7 @@
         top:-7px;
     }
       
-    } */
+    } 
   
   /*--------------star animation--------------------*/
 

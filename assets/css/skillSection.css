@@ -119,7 +119,7 @@
 
 .expertise-panel {
   position: absolute;
-  top: 10%;
+  top: 35%;
   left: 165%;
   width: 600px;
   padding: 40px;
@@ -154,7 +154,7 @@
 .expertise-panel::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 70px;
   right: 0;  /* Changed from left: 0 to right: 0 */
   width: 40%;  /* Added width to contain the image on the right */
   bottom: 0;

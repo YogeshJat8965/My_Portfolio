@@ -35,6 +35,352 @@
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+  <style>
+    .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background: #1a1a1a;
+        padding: 2rem;
+        transition: top 0.3s;
+    }
+
+    header .navbar.show {
+        top: 6rem;
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+    }
+}
+
+/* Hero Section Responsiveness */
+@media (max-width: 991px) {
+    .home {
+        padding: 1rem 3%;
+        flex-direction: column-reverse;
+    }
+
+    .home .image img {
+        width: 100%;
+        max-width: 400px;
+        margin: 2rem auto 0;
+    }
+
+    .home .content {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .home .content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* About Section Responsiveness */
+@media (max-width: 991px) {
+    .about .row {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 5%;
+    }
+
+    .about .row .image {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about .row .content {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2rem;
+    }
+
+    /* Fix the gap between image and content */
+    .about .row {
+        gap: 1rem;
+    }
+}
+
+/* Skills Section Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .containerS {
+        padding: 20px 10px;
+        height: 120%;
+        padding-bottom: 22rem;
+    }
+
+    .skillHeading {
+        font-size: 5px;
+        /* margin-top: 30px;
+        margin-bottom: 5rem; */
+        /* margin: 15px 20px; */
+    }
+
+    .Technical{
+      position: relative;
+      margin-top: 50px;
+      /* top: 15%; */
+    }
+
+    .social-links {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon i {
+        font-size: 20px;
+    }
+
+    .Technical, .nonTechnical {
+        font-size: 24px;
+        margin: 30px auto 40px;
+    }
+
+    .expertise-panel {
+        padding: 20px;
+    }
+
+    .expertise-name {
+        font-size: 36px;
+    }
+
+    .expertise-details {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+  
+    .skillHeading {
+        font-size: 3rem;
+        margin-top: 5%; 
+    }
+
+    .Technical{
+      position: relative;
+      margin-top: 25%;
+      /* top: 15%; */
+    }
+
+    .social-links{
+        margin-top: 70px;
+    }
+
+    .hexagon-grid {
+        position: relative;
+        left: -90%;
+        padding-bottom: -15rem;
+    }
+
+    .hexagon {
+        width: 70px;
+        height: 82px;
+    }
+
+    .letter {
+        font-size: 20px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .expertise-panel {
+        position: relative;
+        top: 45rem;
+        right: -28%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        padding: 15px;
+        width: 50%; /* Adjust width as needed */
+    }
+
+    .expertise-title {
+        font-size: 0px;
+    }
+
+    .expertise-name {
+        font-size: 28px;
+    }
+
+    .expertise-details {
+        font-size: 1.5rem;
+    }
+
+    .expertise-label {
+        font-size: 20px;
+    }
+
+    #non-technical{
+      margin-top: 20rem;
+    }
+
+}
+
+/* Fix expertise panel display on mobile */
+@media screen and (max-width: 991px) {
+    .expertise-panel {
+        position: relative;
+        bottom: 45%;
+        left: auto;
+        transform: none;
+        margin: 50px auto;
+        opacity: 0;
+        display: none;
+    }
+
+    .expertise-panel.active {
+        display: block;
+        opacity: 1;
+        transform: none;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .expertise-panel > * {
+        transform: none;
+    }
+
+    /* @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    } */
+}
+
+/* Enhanced visibility for dark text on mobile */
+@media screen and (max-width: 768px) {
+    .expertise-details {
+        color: #000;
+        line-height: 1.6;
+    }
+
+    .expertise-label {
+        color: #007965;
+    }
+}
+
+
+/* Projects Section Responsiveness */
+@media (max-width: 991px) {
+    .containerP {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerP {
+        grid-template-columns: 1fr;
+    }
+
+    .cardP {
+        width: 100%;
+    }
+}
+
+/* Contact Section Responsiveness */
+@media (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact .container .content {
+        width: 80%;
+    }
+
+    .contact .container .image-box {
+        display: none;
+    }
+
+    .contact form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+/* Fix Horizontal Scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Additional Utilities */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+    }
+
+    .social-icons li {
+        margin: 0.5rem;
+    }
+}
+
+/* Prevent images from causing overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust spacing for mobile devices */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+  </style>
+
 <!-- navbar starts -->
 <header >
   
@@ -67,7 +413,7 @@
       <div class="content">
       <h2>Hi There,<div class="waving-hand">👋</div>
       </br> I'm Yogesh <span>Jat</span></h2>
-      <p>i am into <span class="typing-text"></span></p>
+      <p>i am into </br> <span class="typing-text"></span></p>
   
       <div class="socials">
           <ul class="social-icons">
@@ -246,7 +592,7 @@
 
     <!-- Non-Technical Skills -->
      
-    <div class="hexagon-grid">
+    <div class="hexagon-grid" id="non-technical">
         <!-- Non-Technical Skills Heading -->
         <h2 class="nonTechnical">Non-Technical Skills</h2>
 
@@ -284,45 +630,6 @@
     </div>
 </div>
 
-
-
-
-<!-- education section starts -->
-<!-- <section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
-        </div>
-        <div class="content">
-        <h3>Bachelor of Engineering in Information Technology</h3>
-        <p>Zeal College of engineering and research | SPPU</p>
-        <h4>2020-2024 | Pursuing</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>HSC Science | Informatic Practices</h3>
-      <p>Shri  L. G. Haria Multipurpose School | CBSE</p>
-      <h4>2018-2020 | Completed</h4>
-      </div>
-    </div>
-
-</div>
-</section> -->
-<!-- education section ends -->
-
-
 <!-- work project section starts -->
 <section class="work" id="work" style="background-image: url('./portfolio-bg.jpg');">
   <h1 class="heading"><i class="fas fa-laptop-code"></i> Projects</h1>
@@ -337,7 +644,7 @@
         <div class="card-content">
           <h2>Chat Karo</h2>
           <div class="image-container">
-            <img src="./image.png" alt="project">
+            <img src="./assets/images/projectImages/image.png" alt="project">
           </div>
           <div class="description">
             <p>A real-time chat platform enabling seamless communication with a sleek UI</p>
@@ -358,7 +665,7 @@
         <div class="card-content">
           <h2>Snake Game</h2>
           <div class="image-container">
-            <img src="/snakeGame.png" alt="project">
+            <img src="./assets/images/projectImages/snakeGame.png" alt="project">
           </div>
           <div class="description">
             <p>A nostalgic game with smooth animations for an engaging user experience.</p>
@@ -380,7 +687,7 @@
         <div class="card-content">
           <h2 style="font-size: x-large;">Password Generator</h2>
           <div class="image-container">
-            <img src="./randomPassword.png" alt="project">
+            <img src="./assets/images/projectImages/randomPassword.png" alt="project">
           </div>
           <div class="description">
             <p>A secure tool to generate strong, customizable passwords, ensuring enhanced online safety.</p>
@@ -401,7 +708,7 @@
         <div class="card-content">
           <h2>Weather Web.</h2>
           <div class="image-container">
-            <img src="./weather.png" alt="project">
+            <img src="./assets/images/projectImages/weather.png" alt="project">
           </div>
           <div class="description">
             <p>A weather forecasting website to provide real-time weather updates with user-friendly interface.</p>
@@ -423,7 +730,7 @@
         <div class="card-content">
           <h2>E-commerce Web</h2>
           <div class="image-container">
-            <img src="./shoping.png" alt="project">
+            <img src="./assets/images/projectImages/shoping.png" alt="project">
           </div>
           <div class="description">
             <p>An e-commerce platform  for a modern shopping experience.</p>
@@ -446,98 +753,6 @@
 
 </section>
 
-<!-- work project section ends -->
-
-<!-- experience section starts -->
-<!-- <section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Self Employed</h2>
-        </div>
-        <div class="desc">
-            <h3>Full Stack Developer</h3>
-            <p>Oct 2021 - present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Mapstreak Flyseas</h2>
-        </div>
-        <div class="desc">
-            <h3>Web Developer | Internship</h3>
-            <p>June 2021 - Dec 2021</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>The Spark Foundation</h2>
-        </div>
-        <div class="desc">
-            <h3>Website Developer | Internship</h3>
-            <p>May 2021 - June 2021</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>The Spark Foundation</h2>
-        </div>
-        <div class="desc">
-            <h3>Mobile Application Developer | Internship</h3>
-            <p>April 2021 - May 2021</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Frshr Technologies</h2>
-        </div>
-        <div class="desc">
-            <h3>Wordpress Developer | Internship</h3>
-            <p>April 2021 - April 2021</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>WonderingBlog</h2>
-        </div>
-        <div class="desc">
-            <h3>Web Development & SEO | Internship</h3>
-            <p>March 2021 - April 2021</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="morebtn">
-    <a href="/experience" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
-</section> -->
-<!-- experience section ends -->
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
@@ -610,9 +825,7 @@
               <a href="https://www.linkedin.com/in/yogesh-jat-94590728b/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
               <a href="https://github.com/YogeshJat8965" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
               <a href="mailto:yogeshjat8965@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <!-- <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a> -->
-              <!-- <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a> -->
-          </div>
+           </div>
       </div>
   </div>
 
@@ -650,16 +863,7 @@
     ></script>
 
     <script src="jquery.ripple.js"></script>
-    <!-- <script>
-        $(function(){
-            $("#target").ripple({
-                duration: 5,
-                speed: 200000 // Adjust the speed value to make the effect faster
-            });
-        });
-    </script> -->
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/projectSection.js"></script>
@@ -676,6 +880,7 @@
 
 <!-- SKILL SECTION -->
 <script src="./assets/js/skillSection.js"></script>
+
 
 
 </body>

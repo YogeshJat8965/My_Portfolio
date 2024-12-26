@@ -251,11 +251,30 @@ srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
 
 // Scroll reveal for skills section
-srtop.reveal('.skillHeading', { delay: 100 });
-srtop.reveal('.social-links .social-icon', { interval: 200 });
 
-srtop.reveal('.Technical', { delay: 200 });
-srtop.reveal('.hexagon-grid .hexagon', { interval: 200 });
-srtop.reveal('.expertise-panel', { delay: 400 });
-srtop.reveal('.nonTechnical', { delay: 200 });
+    // Original settings for larger screens
+    srtop.reveal('.skillHeading', { delay: 100 }); 
+    srtop.reveal('.social-links .social-icon', { interval: 200 });
 
+    srtop.reveal('.Technical', { delay: 200 }); 
+    srtop.reveal('.hexagon-grid .hexagon', { interval: 200 }); 
+    srtop.reveal('.expertise-panel', { delay: 400 }); 
+    srtop.reveal('.nonTechnical', { delay: 200 });
+
+    if (window.innerWidth <= 768) {
+        // Adjustments for smaller screens
+        srtop.reveal('.skillHeading', { delay: 100 });
+        srtop.reveal('.social-links .social-icon', { interval: 150 }); // Faster interval for icons
+        srtop.reveal('.Technical', { delay: 150 });
+        srtop.reveal('.hexagon-grid .hexagon', { interval: 150 });     // Smooth and responsive grid animations
+        srtop.reveal('.expertise-panel', { delay: 200 });
+        srtop.reveal('.nonTechnical', { delay: 150 });
+    } else {
+        // Original settings for larger screens
+        srtop.reveal('.skillHeading', { delay: 200 });
+        srtop.reveal('.social-links .social-icon', { interval: 200 });
+        srtop.reveal('.Technical', { delay: 200 });
+        srtop.reveal('.hexagon-grid .hexagon', { interval: 200 });
+        srtop.reveal('.expertise-panel', { delay: 400 });
+        srtop.reveal('.nonTechnical', { delay: 200 });
+    }

@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Yogesh Jat, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
-    <!-- Custom CSS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Yogesh Jat, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+  <!-- Custom CSS -->
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./assets/css/aboutSection.css">
-    <link rel="stylesheet" href="./assets/css/projectSection.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/aboutSection.css">
+  <link rel="stylesheet" href="./assets/css/projectSection.css">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio | Yogesh Jat</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+  <title>Portfolio | Yogesh Jat</title>
   <!-- MERE CHANGES -->
 
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
 
   <!-- SKILL SECTION -->
   <link rel="stylesheet" href="./assets/css/skillSection.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script>
-        <script src="./script.js"></script>
-        <script src="node_modules/velocity-animate/velocity.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="node_modules/velocity-animate/velocity.min.js"></script>
 </head>
-<body oncontextmenu="return false" >
+
+<body oncontextmenu="return false">
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <style>
     .container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-/* Navbar Responsiveness */
-@media (max-width: 768px) {
-    header {
-        padding: 1rem 2rem;
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
     }
 
-    header .navbar {
+    /* Navbar Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem 2rem;
+      }
+
+      header .navbar {
         position: fixed;
         top: -100%;
         left: 0;
@@ -56,76 +62,171 @@
         background: #1a1a1a;
         padding: 2rem;
         transition: top 0.3s;
-    }
+      }
 
-    header .navbar.show {
+      header .navbar.show {
         top: 6rem;
-    }
+      }
 
-    header .navbar ul {
+      header .navbar ul {
         flex-direction: column;
         padding: 0;
-    }
+      }
 
-    header .navbar ul li {
+      header .navbar ul li {
         margin: 1rem 0;
+      }
     }
-}
 
-/* Hero Section Responsiveness */
-@media (max-width: 991px) {
-    .home {
+    /* Hero Section Responsiveness */
+    @media (max-width: 991px) {
+      .home {
         padding: 1rem 3%;
         flex-direction: column-reverse;
-    }
+      }
 
-    .home .image img {
+      .home .image img {
         width: 100%;
         max-width: 400px;
         margin: 2rem auto 0;
-    }
+      }
 
-    .home .content {
+      .home .content {
         text-align: center;
         padding: 1rem;
-    }
+      }
 
-    .home .content h2 {
+      .home .content h2 {
         font-size: 2.5rem;
+      }
     }
-}
 
-/* About Section Responsiveness */
-@media (max-width: 991px) {
-    .about .row {
+    /* About Section Responsiveness */
+    @media (max-width: 991px) {
+      .heading{
+        font-size: 1rem;
+      }
+      .about .row {
         flex-direction: column;
         gap: 2rem;
         margin-top: 5%;
-    }
+      }
 
-    .about .row .image {
+      .about .row .image {
         margin: 0 auto;
         width: 80%;
-    }
+      }
 
-    .about .row .content {
+      .about .row .content {
         text-align: center;
         padding: 1rem;
-    }
+      }
 
-    .about .row .content h3 {
-        font-size: 2rem;
-    }
+      .about .row .content h3 {
+        font-size: 3rem;
+      }
 
-    /* Fix the gap between image and content */
-    .about .row {
+      .about .row {
         gap: 1rem;
+      }
     }
-}
 
-/* Skills Section Responsiveness */
+    /* Skills Section Responsiveness */
 
-@media screen and (max-width: 768px) {
+    @media (max-width: 1350px) {
+      .hexagon-grid {
+        position: relative;
+        right: 15%;
+        max-width: 800px;
+      }
+
+      .expertise-panel {
+        position: relative;
+        left: 130%;
+        top: 2%;
+      }
+    }
+    @media (max-width: 1100px) {
+      .social-links {
+        margin-top: 10%;
+        margin-bottom: 9%;
+        left: 8%;
+        /* position: absolute;
+        right: 30%;
+        bottom: -80px;
+        z-index: 200px */
+        /* gap: 15px;
+        padding: 15px; */
+      }
+      .hexagon-grid {
+        margin-top: 25%;
+        position: relative;
+        right: 25%;
+        max-width: 800px;
+      }
+
+      .expertise-panel {
+        position: relative;
+        left: 120%;
+        top: 6%;
+        width: 80%;
+      }
+      .expertise-title{
+        font-size: 15px;
+      }
+      .expertise-name{
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .containerS {
+        /* padding: 20px 10px; */
+        height: 120%;
+        padding-bottom: 22rem;
+      }
+
+      .skillHeading {
+        font-size: 35px;
+        left: 40%;
+      }
+      .social-links {
+        margin-top: 20%;
+        margin-bottom: 9%;
+        left: 8%;
+        /* position: absolute;
+        right: 30%;
+        bottom: -80px;
+        z-index: 200px */
+        /* gap: 15px;
+        padding: 15px; */
+      }
+      .hexagon-grid {
+        margin-top: 55%;
+        position: relative;
+        right: 80%;
+        max-width: 800px;
+        margin-bottom: 20%;
+      }
+
+      .expertise-panel {
+        position: relative;
+        left: 50%;
+        top: 80%;
+        width: 350px;
+        /* width: 80%; */
+      }
+      /* .expertise-title{
+        font-size: 15px;
+      }
+      .expertise-name{
+        font-size: 22px;
+      } */
+    }
+   
+
+    /* @media screen and (max-width: 768px) {
     .containerS {
         padding: 20px 10px;
         height: 120%;
@@ -134,15 +235,11 @@
 
     .skillHeading {
         font-size: 5px;
-        /* margin-top: 30px;
-        margin-bottom: 5rem; */
-        /* margin: 15px 20px; */
     }
 
     .Technical{
       position: relative;
       margin-top: 50px;
-      /* top: 15%; */
     }
 
     .social-links {
@@ -175,78 +272,82 @@
     .expertise-details {
         font-size: 1.2rem;
     }
-}
+} */
 
-@media screen and (max-width: 480px) {
+    /* @media screen and (max-width: 680px) {
 
-  
-    .skillHeading {
+
+      .skillHeading {
         font-size: 3rem;
-        margin-top: 5%; 
-    }
+        margin-top: 5%;
+      }
 
-    .Technical{
-      position: relative;
-      margin-top: 25%;
-      /* top: 15%; */
-    }
+      .Technical {
+        position: relative;
+        margin-top: 25%;
+      }
 
-    .social-links{
+      .social-links {
         margin-top: 70px;
-    }
+      }
 
-    .hexagon-grid {
+      .hexagon-grid {
         position: relative;
         left: -90%;
         padding-bottom: -15rem;
-    }
+      }
 
-    .hexagon {
+      .hexagon {
         width: 70px;
         height: 82px;
-    }
+      }
 
-    .letter {
+      .letter {
         font-size: 20px;
         width: 32px;
         height: 32px;
-    }
+      }
 
-    .expertise-panel {
+      .expertise-panel {
         position: relative;
         top: 45rem;
         right: -28%;
         transform: translateX(-50%);
         margin-top: 15%;
         padding: 15px;
-        width: 50%; /* Adjust width as needed */
-    }
+        width: 50%;
+      }
 
-    .expertise-title {
+      .expertise-title {
         font-size: 0px;
-    }
+      }
 
-    .expertise-name {
+      .expertise-name {
         font-size: 28px;
-    }
+      }
 
-    .expertise-details {
+      .expertise-details {
         font-size: 1.5rem;
-    }
+      }
 
-    .expertise-label {
+      .expertise-label {
         font-size: 20px;
-    }
+      }
 
-    #non-technical{
-      margin-top: 20rem;
-    }
+      #non-technical {
+        margin-top: 20rem;
+      }
 
-}
+    } */
 
-/* Fix expertise panel display on mobile */
-@media screen and (max-width: 991px) {
-    .expertise-panel {
+    /* Fix expertise panel display on mobile */
+    /* @media screen and (max-width: 991px) {
+      .hexagon-grid {
+        position: relative;
+        right: 20%;
+      }
+
+      .expertise-panel {
         position: relative;
         bottom: 45%;
         left: auto;
@@ -254,634 +355,634 @@
         margin: 50px auto;
         opacity: 0;
         display: none;
-    }
+      }
 
-    .expertise-panel.active {
+      .expertise-panel.active {
         display: block;
         opacity: 1;
         transform: none;
         animation: fadeIn 0.3s ease-in-out;
-    }
+      }
 
-    .expertise-panel > * {
+      .expertise-panel>* {
         transform: none;
-    }
+      }
 
-    /* @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    
     } */
-}
 
-/* Enhanced visibility for dark text on mobile */
-@media screen and (max-width: 768px) {
-    .expertise-details {
+    /* Enhanced visibility for dark text on mobile */
+    @media screen and (max-width: 768px) {
+      .expertise-details {
         color: #000;
         line-height: 1.6;
-    }
+      }
 
-    .expertise-label {
+      .expertise-label {
         color: #007965;
+      }
     }
-}
 
 
-/* Projects Section Responsiveness */
-@media (max-width: 991px) {
-    .containerP {
+    /* Projects Section Responsiveness */
+    @media (max-width: 991px) {
+      .containerP {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         padding: 1rem;
+      }
     }
-}
 
-@media (max-width: 576px) {
-    .containerP {
+    @media (max-width: 576px) {
+      .containerP {
         grid-template-columns: 1fr;
-    }
+      }
 
-    .cardP {
+      .cardP {
         width: 100%;
+      }
     }
-}
 
-/* Contact Section Responsiveness */
-@media (max-width: 768px) {
-    .contact .container {
+    /* Contact Section Responsiveness */
+    @media (max-width: 768px) {
+      .contact .container {
         flex-direction: column;
         padding: 1rem;
-    }
+      }
 
-    .contact .container .content {
+      .contact .container .content {
         width: 80%;
-    }
+      }
 
-    .contact .container .image-box {
+      .contact .container .image-box {
         display: none;
-    }
+      }
 
-    .contact form {
+      .contact form {
         width: 100%;
         margin-top: 2rem;
+      }
     }
-}
 
-/* Footer Responsiveness */
-@media (max-width: 768px) {
-    .footer .box-container {
+    /* Footer Responsiveness */
+    @media (max-width: 768px) {
+      .footer .box-container {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 2rem;
+      }
     }
-}
 
-/* Fix Horizontal Scroll */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
-}
+    /* Fix Horizontal Scroll */
+    html,
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
 
-/* Additional Utilities */
-@media (max-width: 480px) {
-    .heading {
+    /* Additional Utilities */
+    @media (max-width: 480px) {
+      .heading {
         font-size: 2rem;
-    }
+      }
 
-    .btn {
+      .btn {
         padding: 0.8rem 2rem;
-    }
+      }
 
-    .social-icons li {
+      .social-icons li {
         margin: 0.5rem;
+      }
     }
-}
 
-/* Prevent images from causing overflow */
-img {
-    max-width: 100%;
-    height: auto;
-}
+    /* Prevent images from causing overflow */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-/* Adjust spacing for mobile devices */
-@media (max-width: 768px) {
-    section {
+    /* Adjust spacing for mobile devices */
+    @media (max-width: 768px) {
+      section {
         padding: 2rem 1rem;
-    }
+      }
 
-    .container {
+      .container {
         padding: 0 1rem;
+      }
     }
-}
   </style>
 
-<!-- navbar starts -->
-<header >
-  
-  <a href="/" class="logo" style="display: flex; align-items: center;">
-    <img src="./assets/images/Pasted image.png" width="60px" height="40px" alt="Logo">
-    <span>Yogesh</span>
-  </a>
-  
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- <li><a href="#experience">Experience</a></li> -->
-            <!-- <li><a href="#education">Education</a></li> -->
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
+  <!-- navbar starts -->
+  <header>
+
+    <a href="/" class="logo" style="display: flex; align-items: center;">
+      <img src="./assets/images/Pasted image.png" width="60px" height="40px" alt="Logo">
+      <span>Yogesh</span>
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#experience">Experience</a></li> -->
+        <!-- <li><a href="#education">Education</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
 
 
-<!-- hero section starts -->
-<section class="home" id="home">
+  <!-- hero section starts -->
+  <section class="home" id="home">
 
-      <div  id="particles-js"></div>
+    <div id="particles-js"></div>
 
-      <div class="content">
+    <div class="content">
       <h2>Hi There,<div class="waving-hand">👋</div>
-      </br> I'm Yogesh <span>Jat</span></h2>
+        </br> I'm Yogesh <span>Jat</span></h2>
       <p>i am into </br> <span class="typing-text"></span></p>
-  
+
       <div class="socials">
-          <ul class="social-icons">
-            <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-            <li><a class="github" aria-label="GitHub" href="https://github.com/YogeshJat8965" target="_blank"><i class="fab fa-github"></i></a></li>
-            <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
-            <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
-            <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/yogeshjat100"><i class="fab fa-instagram" target="_blank"></i></a></li>
-            <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
-          </ul>
-        </div>
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn"
+              href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/YogeshJat8965" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+          <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/yogeshjat100"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+          <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
       </div>
-  <div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
-  </div>
-</section>
-<!-- hero section ends -->
+    </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
 
 
-<!-- about section starts -->
-<section class="about wrapper" id="about">
+  <!-- about section starts -->
+  <section class="about wrapper" id="about">
 
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
 
-  <h2 class="heading" style="color:  #00bfff;"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <h2 class="heading" style="color:  #00bfff;"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
 
-  <div class="row">
-    <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/profile2.JPG" alt="">
+    <div class="row">
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.JPG" alt="">
+      </div>
+      <div class="content">
+        <h3 style="color:  #e2e8f0;">I'm Yogesh</h3>
+        <span class="tag">Full Stack Developer</span>
+
+        <section style="font-family: Arial, sans-serif; line-height: 1.8;">
+          <h2 style="color: #00bfff; font-size: 3em;">Freelancer Project-Innovator Aspiring Intern</h2>
+          <p style="font-size: 1.5em; color: #e2e8f0; margin-top: 10px;">
+            A skilled <strong style="color: white;">MERN Stack Developer</strong> with expertise in <strong
+              style="color: white;">React.js</strong>,
+            <strong style="color: white;">Node.js</strong>, <strong style="color: white;">TailwindCSS</strong>, and
+            <strong style="color: white;">Puppeteer</strong>. I specialize in building efficient web applications and
+            automating workflows to
+            simplify business processes.
+          </p>
+          <p style="font-size: 1.5em; color: #e2e8f0; margin-top: 10px;">
+            Over the past months, I’ve successfully delivered <strong style="color: white;">freelancing
+              projects</strong>
+            that helped businesses enhance
+            their online presence through modern, user-friendly designs.
+          </p>
+          <p style="font-size: 1.5em; color: white; margin-top: 10px;">
+            <strong style="color: white;">Achievements:</strong> Solved <strong style="color: white;">300+
+              problems</strong> on LeetCode, completed scalable full-stack projects,
+            and collaborated effectively with clients to meet deadlines.
+          </p>
+          <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
+            <strong style="color: white;">Contact:</strong> yogeshjat8965@gmail.com | 📍 Indore, India
+          </p>
+
+          <h3 style="color: #00bfff; font-size: 2.5em; margin-top: 20px;">What Sets Me Apart?</h3>
+          <ul style="font-size: 1.5em; color: white; margin-top: 10px; padding-left: 20px;">
+            <li>🌟 <strong style="color: white;">Real-World Experience:</strong> Delivered responsive and scalable web
+              solutions.</li>
+            <li>🔧 <strong style="color: white;">Problem-Solving Skills:</strong> Tackled diverse challenges and solved
+              real client issues.</li>
+            <li>💡 <strong style="color: white;">Internship-Ready:</strong> A quick learner passionate about
+              contributing
+              to meaningful projects.</li>
+          </ul>
+
+          <h3 style="color: #00bfff; font-size: 2.5em; margin-top: 20px;">What I’m Looking For</h3>
+          <p style="font-size: 1.5em; color: white; margin-top: 10px;">
+            Seeking an <strong style="color: white;">internship</strong> where I can leverage my skills, collaborate
+            with
+            innovative teams, and
+            contribute to impactful projects that drive real results.
+          </p>
+
+          <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1XVUtByI8AEkccSJFuaE74duhVTV2wYqN/view?usp=sharing" target="_blank"
+              class="btn"><span>Resume</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+
+        </section>
+
+      </div>
     </div>
-    <div class="content">
-      <h3 style="color:  #e2e8f0;">I'm Yogesh</h3>
-      <span class="tag">Full Stack Developer</span>
 
-      <section style="font-family: Arial, sans-serif; line-height: 1.8;">
-        <h2 style="color: #00bfff; font-size: 3em;">Freelancer  Project-Innovator  Aspiring Intern</h2>
-        <p style="font-size: 1.5em; color: #e2e8f0; margin-top: 10px;">
-          A skilled <strong style="color: white;">MERN Stack Developer</strong> with expertise in <strong
-            style="color: white;">React.js</strong>,
-          <strong style="color: white;">Node.js</strong>, <strong style="color: white;">TailwindCSS</strong>, and
-          <strong style="color: white;">Puppeteer</strong>. I specialize in building efficient web applications and
-          automating workflows to
-          simplify business processes.
-        </p>
-        <p style="font-size: 1.5em; color: #e2e8f0; margin-top: 10px;">
-          Over the past months, I’ve successfully delivered <strong style="color: white;">freelancing projects</strong>
-          that helped businesses enhance
-          their online presence through modern, user-friendly designs.
-        </p>
-        <p style="font-size: 1.5em; color: white; margin-top: 10px;">
-          <strong style="color: white;">Achievements:</strong> Solved <strong style="color: white;">300+
-            problems</strong> on LeetCode, completed scalable full-stack projects,
-          and collaborated effectively with clients to meet deadlines.
-        </p>
-        <p style="font-size: 1.5em; color: #00bfff; margin-top: 10px;">
-          <strong style="color: white;">Contact:</strong> yogeshjat8965@gmail.com | 📍 Indore, India
-        </p>
+  </section>
 
-        <h3 style="color: #00bfff; font-size: 2.5em; margin-top: 20px;">What Sets Me Apart?</h3>
-        <ul style="font-size: 1.5em; color: white; margin-top: 10px; padding-left: 20px;">
-          <li>🌟 <strong style="color: white;">Real-World Experience:</strong> Delivered responsive and scalable web
-            solutions.</li>
-          <li>🔧 <strong style="color: white;">Problem-Solving Skills:</strong> Tackled diverse challenges and solved
-            real client issues.</li>
-          <li>💡 <strong style="color: white;">Internship-Ready:</strong> A quick learner passionate about contributing
-            to meaningful projects.</li>
-        </ul>
+  <!-- SKILL SECTION -->
 
-        <h3 style="color: #00bfff; font-size: 2.5em; margin-top: 20px;">What I’m Looking For</h3>
-        <p style="font-size: 1.5em; color: white; margin-top: 10px;">
-          Seeking an <strong style="color: white;">internship</strong> where I can leverage my skills, collaborate with
-          innovative teams, and
-          contribute to impactful projects that drive real results.
-        </p>
-
-        <div class="resumebtn">
-          <a href="https://drive.google.com/file/d/1XVUtByI8AEkccSJFuaE74duhVTV2wYqN/view?usp=sharing" target="_blank"
-            class="btn"><span>Resume</span>
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-
-      </section>
-
-    </div>
-  </div>
-
-</section>
-
- <!-- SKILL SECTION -->
-
-<!-- <section> -->
-  <h2 class="skillHeading" class="skills" id="skills" >SKILLS</h2>
-  <div class="social-links" >
+  <!-- <section> -->
+  <h2 class="skillHeading" class="skills" id="skills">SKILLS</h2>
+  <div class="social-links">
     <!-- GitHub -->
-    <a href="https://github.com/YogeshJat8965" 
-       class="social-icon github" 
-       data-tooltip="GitHub"
-       target="_blank">
-        <i class="fab fa-github"></i>
+    <a href="https://github.com/YogeshJat8965" class="social-icon github" data-tooltip="GitHub" target="_blank">
+      <i class="fab fa-github"></i>
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/yogesh-jat-94590728b/" 
-       class="social-icon linkedin" 
-       data-tooltip="LinkedIn"
-       target="_blank">
-        <i class="fab fa-linkedin-in"></i>
+    <a href="https://www.linkedin.com/in/yogesh-jat-94590728b/" class="social-icon linkedin" data-tooltip="LinkedIn"
+      target="_blank">
+      <i class="fab fa-linkedin-in"></i>
     </a>
 
     <!-- CodeChef -->
-    <a href="https://www.codechef.com/users/yogeshjat" 
-       class="social-icon codechef" 
-       data-tooltip="CodeChef"
-       target="_blank">
-        <i class="fas fa-code"></i>
+    <a href="https://www.codechef.com/users/yogeshjat" class="social-icon codechef" data-tooltip="CodeChef"
+      target="_blank">
+      <i class="fas fa-code"></i>
     </a>
 
     <!-- Codeforces -->
-    <a href="https://www.codechef.com/users/yogeshjat" 
-       class="social-icon codeforces" 
-       data-tooltip="Codeforces"
-       target="_blank">
-        <i class="fas fa-laptop-code"></i>
+    <a href="https://www.codechef.com/users/yogeshjat" class="social-icon codeforces" data-tooltip="Codeforces"
+      target="_blank">
+      <i class="fas fa-laptop-code"></i>
     </a>
 
     <!-- LeetCode -->
-    <a href="https://leetcode.com/u/Yogesh8965/" 
-       class="social-icon leetcode" 
-       data-tooltip="LeetCode"
-       target="_blank">
-        <i class="fas fa-code-branch"></i>
+    <a href="https://leetcode.com/u/Yogesh8965/" class="social-icon leetcode" data-tooltip="LeetCode" target="_blank">
+      <i class="fas fa-code-branch"></i>
     </a>
-    
-</div>
+
+  </div>
   <div class="containerS">
     <div class="hexagon-grid">
-        <!-- Technical Skills Heading -->
-        <h2 class="Technical">Technical Skills</h2>
-        
-        <!-- Hexagons for Technical Skills -->
-        <div class="hexagon hex-1" data-expertise="BACKEND" data-experience="NodeJs, ExpressJs, MongoDB, Sql, WebSockets">
-            <span class="letter b">B</span>
-        </div>
-        <div class="hexagon hex-2" data-expertise="FRONTEND" data-experience="Tailwind, ReactJs, ES6+, Material UI, Next UI">
-            <span class="letter f">F</span>
-        </div>
-        <div class="hexagon hex-3" data-expertise="WEB SCRAPING" data-experience="Puppeteer,  Selenium">
-            <span class="letter h">W</span>
-        </div>
-        <div class="hexagon hex-4" data-expertise="TOOLS" data-experience="Git, GitHub, Vs Code, Postman, NPM, Yarn">
-            <span class="letter c">D</span>
-        </div>
-        <div class="hexagon hex-5" data-expertise="JAVASCRIPT" data-experience="ES6+, jQuery, Node">
-            <span class="letter j">J</span>
-        </div>
-        <div class="hexagon hex-6" data-expertise="DSA" data-experience="350+ Poblems on LeetCode, Gfg">
-            <span class="letter g">D</span>
-        </div>
-        <div class="hexagon hex-7" data-expertise="Coding" data-experience="2 star on CodeChef with Rating 1430, 200+ CP questions on Codeforces, CodeChef">
-            <span class="letter s">C</span>
-        </div>
+      <!-- Technical Skills Heading -->
+      <h2 class="Technical">Technical Skills</h2>
 
-        <!-- Expertise Panel -->
-        <div class="expertise-panel">
-            <div class="expertise-title">Expertise</div>
-            <div class="expertise-name"></div>
-            <div class="expertise-details">
-               
-                <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
-            </div>
+      <!-- Hexagons for Technical Skills -->
+      <div class="hexagon hex-1" data-expertise="BACKEND" data-experience="NodeJs, ExpressJs, MongoDB, Sql, WebSockets">
+        <span class="letter b">B</span>
+      </div>
+      <div class="hexagon hex-2" data-expertise="FRONTEND"
+        data-experience="Tailwind, ReactJs, ES6+, Material UI, Next UI">
+        <span class="letter f">F</span>
+      </div>
+      <div class="hexagon hex-3" data-expertise="WEB SCRAPING" data-experience="Puppeteer,  Selenium">
+        <span class="letter h">W</span>
+      </div>
+      <div class="hexagon hex-4" data-expertise="TOOLS" data-experience="Git, GitHub, Vs Code, Postman, NPM, Yarn">
+        <span class="letter c">D</span>
+      </div>
+      <div class="hexagon hex-5" data-expertise="JAVASCRIPT" data-experience="ES6+, jQuery, Node">
+        <span class="letter j">J</span>
+      </div>
+      <div class="hexagon hex-6" data-expertise="DSA" data-experience="350+ Poblems on LeetCode, Gfg">
+        <span class="letter g">D</span>
+      </div>
+      <div class="hexagon hex-7" data-expertise="Coding"
+        data-experience="2 star on CodeChef with Rating 1430, 200+ CP questions on Codeforces, CodeChef">
+        <span class="letter s">C</span>
+      </div>
+
+      <!-- Expertise Panel -->
+      <div class="expertise-panel">
+        <div class="expertise-title">Expertise</div>
+        <div class="expertise-name"></div>
+        <div class="expertise-details">
+
+          <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
         </div>
+      </div>
     </div>
 
     <!-- Non-Technical Skills -->
-     
+
     <div class="hexagon-grid" id="non-technical">
-        <!-- Non-Technical Skills Heading -->
-        <h2 class="nonTechnical">Non-Technical Skills</h2>
+      <!-- Non-Technical Skills Heading -->
+      <h2 class="nonTechnical">Non-Technical Skills</h2>
 
-        <!-- Hexagons for Non-Technical Skills -->
-        <div class="hexagon hex-1" data-expertise="Communication" data-experience="Presentation Skills, Active Listening">
-            <span class="letter b">C</span>
-        </div>
-        <div class="hexagon hex-2" data-expertise="Productivity" data-experience="Prioritization, Scheduling, Deadline Management">
-            <span class="letter f">P</span>
-        </div>
-        <div class="hexagon hex-3" data-expertise="Teamwork" data-experience="Cooperation in Remote Teams, Team Building">
-            <span class="letter h">T</span>
-        </div>
-        <div class="hexagon hex-4" data-expertise="Leadership" data-experience="Goal Setting and Achievement, Conflict Resolution">
-            <span class="letter c">L</span>
-        </div>
-        <div class="hexagon hex-5" data-expertise="Creativity" data-experience="Curiosity and Exploration, Creative Problem Solving">
-            <span class="letter j">C</span>
-        </div>
-        <div class="hexagon hex-6" data-expertise="Problem-Solving" data-experience="Critical Thinking, Creative Solutions, Decision Making">
-            <span class="letter g">P</span>
-        </div>
-        <div class="hexagon hex-7" data-expertise="Collaboration" data-experience="Cooperation in Remote Teams">
-            <span class="letter s">C</span>
-        </div>
+      <!-- Hexagons for Non-Technical Skills -->
+      <div class="hexagon hex-1" data-expertise="Communication" data-experience="Presentation Skills, Active Listening">
+        <span class="letter b">C</span>
+      </div>
+      <div class="hexagon hex-2" data-expertise="Productivity"
+        data-experience="Prioritization, Scheduling, Deadline Management">
+        <span class="letter f">P</span>
+      </div>
+      <div class="hexagon hex-3" data-expertise="Teamwork" data-experience="Cooperation in Remote Teams, Team Building">
+        <span class="letter h">T</span>
+      </div>
+      <div class="hexagon hex-4" data-expertise="Leadership"
+        data-experience="Goal Setting and Achievement, Conflict Resolution">
+        <span class="letter c">L</span>
+      </div>
+      <div class="hexagon hex-5" data-expertise="Creativity"
+        data-experience="Curiosity and Exploration, Creative Problem Solving">
+        <span class="letter j">C</span>
+      </div>
+      <div class="hexagon hex-6" data-expertise="Problem-Solving"
+        data-experience="Critical Thinking, Creative Solutions, Decision Making">
+        <span class="letter g">P</span>
+      </div>
+      <div class="hexagon hex-7" data-expertise="Collaboration" data-experience="Cooperation in Remote Teams">
+        <span class="letter s">C</span>
+      </div>
 
-        <!-- Expertise Panel -->
-        <div class="expertise-panel">
-            <div class="expertise-title">Expertise</div>
-            <div class="expertise-name"></div>
-            <div class="expertise-details">
-                <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
-            </div>
+      <!-- Expertise Panel -->
+      <div class="expertise-panel">
+        <div class="expertise-title">Expertise</div>
+        <div class="expertise-name"></div>
+        <div class="expertise-details">
+          <p><span class="expertise-label">Experience: </span><span class="experience"></span></p>
         </div>
+      </div>
     </div>
-</div>
-
-<!-- work project section starts -->
-<section class="work" id="work" style="background-image: url('./portfolio-bg.jpg');">
-  <h1 class="heading"><i class="fas fa-laptop-code"></i> Projects</h1>
-  <!-- <h2 class="section-title">Projects</h2> -->
-
-
-  <div class="containerP">
-    <!-- Card 1 -->
-    <a href="https://chattyapp-ki7g.onrender.com/" target="_blank">
-      <div class="cardP">
-        <div class="glow"></div>
-        <div class="card-content">
-          <h2>Chat Karo</h2>
-          <div class="image-container">
-            <img src="./assets/images/projectImages/image.png" alt="project">
-          </div>
-          <div class="description">
-            <p>A real-time chat platform enabling seamless communication with a sleek UI</p>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">Socket.io</span>
-            <span class="tech-tag">Express.js</span>
-            <span class="tech-tag">Node.js</span>
-          </div>
-        </div>
-        </div>
-      </a>
-
-    <!-- Card 2 -->
-    <a href="https://javascript-snakes-mu03y1drt-yogesh-jats-projects-73dbdfd8.vercel.app/" target="_blank">
-      <div class="cardP">
-        <div class="glow"></div>
-        <div class="card-content">
-          <h2>Snake Game</h2>
-          <div class="image-container">
-            <img src="./assets/images/projectImages/snakeGame.png" alt="project">
-          </div>
-          <div class="description">
-            <p>A nostalgic game with smooth animations for an engaging user experience.</p>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">Js</span>
-            <span class="tech-tag">CSS</span>
-          </div>
-        </div>
-        </div>
-      </a>
-
-    <!-- Card 3 -->
-    
-    <a href="https://random-password-generator-lime-six.vercel.app/" target="_blank">
-      <div class="cardP">
-        <div class="glow"></div>
-        <div class="card-content">
-          <h2 style="font-size: x-large;">Password Generator</h2>
-          <div class="image-container">
-            <img src="./assets/images/projectImages/randomPassword.png" alt="project">
-          </div>
-          <div class="description">
-            <p>A secure tool to generate strong, customizable passwords, ensuring enhanced online safety.</p>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">Tailwind</span>
-            <span class="tech-tag">Js</span>
-          </div>
-        </div>
-        </div>
-      </a>
-
-    <!-- Card 4 -->
-    <a href="https://weather-web-jade-iota.vercel.app/" target="_blank">
-      <div class="cardP">
-        <div class="glow"></div>
-        <div class="card-content">
-          <h2>Weather Web.</h2>
-          <div class="image-container">
-            <img src="./assets/images/projectImages/weather.png" alt="project">
-          </div>
-          <div class="description">
-            <p>A weather forecasting website to provide real-time weather updates with user-friendly interface.</p>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">OpenWeather API </span>
-            <span class="tech-tag">Tailwind</span>
-          </div>
-        </div>
-        </div>
-    </a>
-
-    <!-- Card 5 -->
-
-    <a href="https://shoping-style-website.vercel.app/" target="_blank">
-      <div class="cardP">
-        <div class="glow"></div>
-        <div class="card-content">
-          <h2>E-commerce Web</h2>
-          <div class="image-container">
-            <img src="./assets/images/projectImages/shoping.png" alt="project">
-          </div>
-          <div class="description">
-            <p>An e-commerce platform  for a modern shopping experience.</p>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Redux</span>
-            <span class="tech-tag">Tailwind</span>
-          </div>
-        </div>
-        </div>
-      </a>
-
-    <!-- Card 6 -->
-    
-
   </div>
 
+  <!-- work project section starts -->
+  <section class="work" id="work" style="background-image: url('./portfolio-bg.jpg');">
+    <h1 class="heading"><i class="fas fa-laptop-code"></i> Projects</h1>
+    <!-- <h2 class="section-title">Projects</h2> -->
 
 
-</section>
+    <div class="containerP">
+      <!-- Card 1 -->
+      <a href="https://chattyapp-ki7g.onrender.com/" target="_blank">
+        <div class="cardP">
+          <div class="glow"></div>
+          <div class="card-content">
+            <h2>Chat Karo</h2>
+            <div class="image-container">
+              <img src="./assets/images/projectImages/image.png" alt="project">
+            </div>
+            <div class="description">
+              <p>A real-time chat platform enabling seamless communication with a sleek UI</p>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://javascript-snakes-mu03y1drt-yogesh-jats-projects-73dbdfd8.vercel.app/" target="_blank">
+        <div class="cardP">
+          <div class="glow"></div>
+          <div class="card-content">
+            <h2>Snake Game</h2>
+            <div class="image-container">
+              <img src="./assets/images/projectImages/snakeGame.png" alt="project">
+            </div>
+            <div class="description">
+              <p>A nostalgic game with smooth animations for an engaging user experience.</p>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">Js</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+
+      <a href="https://random-password-generator-lime-six.vercel.app/" target="_blank">
+        <div class="cardP">
+          <div class="glow"></div>
+          <div class="card-content">
+            <h2 style="font-size: x-large;">Password Generator</h2>
+            <div class="image-container">
+              <img src="./assets/images/projectImages/randomPassword.png" alt="project">
+            </div>
+            <div class="description">
+              <p>A secure tool to generate strong, customizable passwords, ensuring enhanced online safety.</p>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Js</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="https://weather-web-jade-iota.vercel.app/" target="_blank">
+        <div class="cardP">
+          <div class="glow"></div>
+          <div class="card-content">
+            <h2>Weather Web.</h2>
+            <div class="image-container">
+              <img src="./assets/images/projectImages/weather.png" alt="project">
+            </div>
+            <div class="description">
+              <p>A weather forecasting website to provide real-time weather updates with user-friendly interface.</p>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">OpenWeather API </span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+
+      <a href="https://shoping-style-website.vercel.app/" target="_blank">
+        <div class="cardP">
+          <div class="glow"></div>
+          <div class="card-content">
+            <h2>E-commerce Web</h2>
+            <div class="image-container">
+              <img src="./assets/images/projectImages/shoping.png" alt="project">
+            </div>
+            <div class="description">
+              <p>An e-commerce platform for a modern shopping experience.</p>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
 
 
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    </div>
 
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
+
+
+  </section>
+
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
       </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
-<!-- contact section ends -->
+    </div>
+  </section>
+  <!-- contact section ends -->
 
 
-<!-- footer section starts -->
-<section class="footer">
+  <!-- footer section starts -->
+  <section class="footer">
 
-  <div class="box-container">
+    <div class="box-container">
 
       <div class="box">
-          <h3>Yogesh's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+        <h3>Yogesh's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
+          🚀. Connect with me over live chat!</p>
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 8965900973</p>
-          <p> <i class="fas fa-envelope"></i>yogeshjat8965@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Gwalior, India-474005</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/yogesh-jat-94590728b/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/YogeshJat8965" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:yogeshjat8965@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-           </div>
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
       </div>
-  </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> Yogesh Jat</a></h1>
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 8965900973</p>
+        <p> <i class="fas fa-envelope"></i>yogeshjat8965@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Gwalior, India-474005</p>
+        <div class="share">
 
-</section>
-<!-- footer section ends -->
+          <a href="https://www.linkedin.com/in/yogesh-jat-94590728b/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/YogeshJat8965" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:yogeshjat8965@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+        </div>
+      </div>
+    </div>
 
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/jigar-sable"> Yogesh Jat</a></h1>
 
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-    <script src="jquery.ripple.js"></script>
+  </section>
+  <!-- footer section ends -->
 
 
-<script src="./assets/js/script.js"></script>
-<script src="./assets/js/projectSection.js"></script>
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
 
-<script>
-  $(document).ready(function() {
-    $('.work').ripples({
-      resolution: 512,
-      dropRadius: 20, // px
-      perturbance: 0.04,
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script src="jquery.ripple.js"></script>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/projectSection.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.work').ripples({
+        resolution: 512,
+        dropRadius: 20, // px
+        perturbance: 0.04,
+      });
     });
-  });
-</script>
+  </script>
 
-<!-- SKILL SECTION -->
-<script src="./assets/js/skillSection.js"></script>
+  <!-- SKILL SECTION -->
+  <script src="./assets/js/skillSection.js"></script>
 
 
 
 </body>
+
 </html>

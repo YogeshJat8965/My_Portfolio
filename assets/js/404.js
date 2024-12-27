@@ -24,3 +24,21 @@ document.onkeydown = function(e) {
      return false;
   }
 }
+
+
+/* .expertise-panel {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 600px;
+  padding: 40px;
+  background: white;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+*/
